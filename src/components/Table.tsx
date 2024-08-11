@@ -2,7 +2,7 @@ import { Box, CircularProgress, Typography } from "@mui/material";
 import { DataGrid, GridColDef, GridRowParams } from "@mui/x-data-grid";
 import { useState } from "react";
 import RepositoryDetails from "./RepositoryDetails";
-import { Repository, RepositoryRow } from "../types/Repository";
+import { Repository } from "../types/Repository";
 import "../styles/Table.scss";
 import { RootState } from "../state/store";
 import { useSelector } from "react-redux";
@@ -46,7 +46,7 @@ const default_columns: GridColDef[] = [
 
 // Интерфейс для свойств компонента Table
 interface TableProps {
-  rows: RepositoryRow[]; // Список строк для отображения в таблице
+  rows: Repository[]; // Список строк для отображения в таблице
   columns?: GridColDef[]; // Колонки таблицы, можно переопределить стандартные
 }
 
