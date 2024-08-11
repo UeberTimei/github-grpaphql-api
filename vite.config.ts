@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: "/github-graphql-api-table_app/",
+  base: "github-grpaphql-api",
 });
